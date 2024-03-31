@@ -41,7 +41,6 @@ class HomeFragment : Fragment(){
     private fun initConnectionListener() {
         connectivityViewModel = ViewModelProvider(requireActivity())[ConnectivityViewModel::class.java]
         connectivityViewModel.isConnected.observe(viewLifecycleOwner) { isConnected ->
-            Toast.makeText(context, if (isConnected) getString(R.string.connect) else getString(R.string.disconnected), Toast.LENGTH_SHORT).show()
             if (!isConnected && firstInternetConnection == true) viewModel.saveData()
             else if (firstInternetConnection == null && isConnected)viewModel.fetchData()
             if (firstInternetConnection == null) firstInternetConnection = isConnected
