@@ -17,3 +17,7 @@ Aşağıdakiları tapşırıqları həyata keçirin:
 * Material UI
 
 Repozitoriya linki göndərin və cavab gözləyin.
+
+### WebSocket-ə qoşulmaq üçün Socket.IO v2 istifadə olunmalıdır
+<img width="1020" alt="image" src="https://github.com/algoritma-az/android-recruitment-test/assets/3234413/12f8532d-65ee-4ea3-a07b-2ab2801edae0">
+
